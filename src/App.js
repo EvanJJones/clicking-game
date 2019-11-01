@@ -19,7 +19,6 @@ class App extends Component {
       const clicked = this.state.clicked
       clicked.push(id);
       this.setState({clicked, score: newScore});
-      console.log(this.state.clicked)
     }
     this.shuffleImages();
   };
@@ -41,10 +40,12 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      
+      <div className="container">
         <ScoreBar 
           score={this.state.score}
         />
+        
         {this.state.images.map((image) => (
           <Image 
             src={image.src}
@@ -53,7 +54,8 @@ class App extends Component {
             clickImage={this.clickImage}
           />
         ))}
-      </>
+      </div>
+      
     );
   }
 }

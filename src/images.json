@@ -1,22 +1,62 @@
 [
   {
-    "src": "https://via.placeholder.com/201",
-    "alt": "placeholder",
+    "src": "./images/JC.png",
+    "alt": "Jack of Clubs",
     "id": 1
   },
   {
-    "src": "https://via.placeholder.com/200",
-    "alt": "placeholder",
+    "src": "./images/JD.png",
+    "alt": "Jack of Diamonds",
     "id": 2
   },
   {
-    "src": "https://via.placeholder.com/203",
-    "alt": "placeholder",
+    "src": "./images/JH.png",
+    "alt": "Jack of Hearts",
     "id": 3
   },
   {
-    "src": "https://via.placeholder.com/204",
-    "alt": "placeholder",
+    "src": "./images/JS.png",
+    "alt": "Jack of Spades",
     "id": 4
+  },
+  {
+    "src": "./images/KC.png",
+    "alt": "King of Clubs",
+    "id": 5
+  },
+  {
+    "src": "./images/KD.png",
+    "alt": "King of Diamonds",
+    "id": 6
+  },
+  {
+    "src": "./images/KH.png",
+    "alt": "King of Hearts",
+    "id": 7
+  },
+  {
+    "src": "./images/KS.png",
+    "alt": "King of Spades",
+    "id": 8
+  },
+  {
+    "src": "./images/QC.png",
+    "alt": "Queen of Clubs",
+    "id": 9
+  },
+  {
+    "src": "./images/QD.png",
+    "alt": "Queen of Diamonds",
+    "id": 10
+  },
+  {
+    "src": "./images/QH.png",
+    "alt": "Queen of Hearts",
+    "id": 11
+  },
+  {
+    "src": "./images/QS.png",
+    "alt": "Queen of Spades",
+    "id": 12
   }
 ]
