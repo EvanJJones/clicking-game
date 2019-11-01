@@ -2,24 +2,33 @@ import React, { Component } from "react";
 import ScoreBar from "./components/ScoreBar";
 import Image from "./components/Image.js";
 import images from "./images.json";
-
+import Container from "./components/Container.js"
+import Rules from "./components/Rules.js"
 class App extends Component {
   state = {
     images,
     clicked: [],
-    score: 0
+    score: 0,
+    hiScore: 0,
+    rulesRead: false
   }
 
   clickImage = (id) => {
     if (this.state.clicked.includes(id)){
       console.log('you lose');
+      
       this.setState({score: 0, clicked: []})
     }else {
       const newScore = this.state.score + 1;
       const clicked = this.state.clicked
       clicked.push(id);
+      if (newScore >= this.state.hiScore) {
+        this.setState({hiScore: newScore})
+      }
+      
       this.setState({clicked, score: newScore});
     }
+
     this.shuffleImages();
   };
 
@@ -38,22 +47,35 @@ class App extends Component {
     
   };
 
+  markedRead = () => {
+    this.setState({rulesRead: true})
+  }
+
   render() {
     return (
       
       <div className="container">
+        {this.state.rulesRead ? (
+          null
+        ) : (
+          <Rules 
+            markedRead={this.markedRead}
+          />
+        )}
         <ScoreBar 
           score={this.state.score}
+          hiScore={this.state.hiScore}
         />
-        
-        {this.state.images.map((image) => (
-          <Image 
-            src={image.src}
-            key={image.id}
-            id={image.id}
-            clickImage={this.clickImage}
-          />
-        ))}
+        <Container>
+          {this.state.images.map((image) => (
+            <Image 
+              src={image.src}
+              key={image.id}
+              id={image.id}
+              clickImage={this.clickImage}
+            />
+          ))}
+        </Container>
       </div>
       
     );
