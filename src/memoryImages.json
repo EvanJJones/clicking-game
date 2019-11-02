@@ -1,0 +1,74 @@
+[
+  {
+    "src": "./images/JC.png",
+    "back": "./images/cardBack.webp",
+    "alt": "Jack of Clubs",
+    "id": 1
+  },
+  {
+    "src": "./images/JD.png",
+    "back": "./images/cardBack.webp",
+    "alt": "Jack of Diamonds",
+    "id": 2
+  },
+  {
+    "src": "./images/JH.png",
+    "back": "./images/cardBack.webp",
+    "alt": "Jack of Hearts",
+    "id": 3
+  },
+  {
+    "src": "./images/JS.png",
+    "back": "./images/cardBack.webp",
+    "alt": "Jack of Spades",
+    "id": 4
+  },
+  {
+    "src": "./images/KC.png",
+    "back": "./images/cardBack.webp",
+    "alt": "King of Clubs",
+    "id": 5
+  },
+  {
+    "src": "./images/KD.png",
+    "back": "./images/cardBack.webp",
+    "alt": "King of Diamonds",
+    "id": 6
+  },
+  {
+    "src": "./images/JC.png",
+    "back": "./images/cardBack.webp",
+    "alt": "Jack of Clubs",
+    "id": 10
+  },
+  {
+    "src": "./images/JD.png",
+    "back": "./images/cardBack.webp",
+    "alt": "Jack of Diamonds",
+    "id": 20
+  },
+  {
+    "src": "./images/JH.png",
+    "back": "./images/cardBack.webp",
+    "alt": "Jack of Hearts",
+    "id": 30
+  },
+  {
+    "src": "./images/JS.png",
+    "back": "./images/cardBack.webp",
+    "alt": "Jack of Spades",
+    "id": 40
+  },
+  {
+    "src": "./images/KC.png",
+    "back": "./images/cardBack.webp",
+    "alt": "King of Clubs",
+    "id": 50
+  },
+  {
+    "src": "./images/KD.png",
+    "back": "./images/cardBack.webp",
+    "alt": "King of Diamonds",
+    "id": 60
+  }
+]
