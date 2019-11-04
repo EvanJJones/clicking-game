@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/clicking-game/static/css/main.34de6062.chunk.css",
-    "main.js": "/clicking-game/static/js/main.cbf99f49.chunk.js",
-    "main.js.map": "/clicking-game/static/js/main.cbf99f49.chunk.js.map",
+    "main.js": "/clicking-game/static/js/main.6c6e2367.chunk.js",
+    "main.js.map": "/clicking-game/static/js/main.6c6e2367.chunk.js.map",
     "runtime-main.js": "/clicking-game/static/js/runtime-main.d0e5c838.js",
     "runtime-main.js.map": "/clicking-game/static/js/runtime-main.d0e5c838.js.map",
-    "static/js/2.5daff98e.chunk.js": "/clicking-game/static/js/2.5daff98e.chunk.js",
-    "static/js/2.5daff98e.chunk.js.map": "/clicking-game/static/js/2.5daff98e.chunk.js.map",
+    "static/js/2.8c85c1f8.chunk.js": "/clicking-game/static/js/2.8c85c1f8.chunk.js",
+    "static/js/2.8c85c1f8.chunk.js.map": "/clicking-game/static/js/2.8c85c1f8.chunk.js.map",
     "index.html": "/clicking-game/index.html",
-    "precache-manifest.72c36ec301dca8eaf7cdf37f7c897f65.js": "/clicking-game/precache-manifest.72c36ec301dca8eaf7cdf37f7c897f65.js",
+    "precache-manifest.696f993abf1e74bd353e9b4f9da9dc09.js": "/clicking-game/precache-manifest.696f993abf1e74bd353e9b4f9da9dc09.js",
     "service-worker.js": "/clicking-game/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/clicking-game/static/css/main.34de6062.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.d0e5c838.js",
-    "static/js/2.5daff98e.chunk.js",
+    "static/js/2.8c85c1f8.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.cbf99f49.chunk.js"
+    "static/js/main.6c6e2367.chunk.js"
   ]
 }
