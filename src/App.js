@@ -12,21 +12,66 @@ class App extends Component {
     score: 0,
     hiScore: 0,
     rulesRead: false,
+    count: 0,
     message: ""
   }
 
   componentDidMount() {
     this.shuffleImages();
   }
-  clickImage = (id) => {
-    this.setState({message: ""});
+
+  clickImage = (id, match) => {
+    if (this.state.count >= 2){
+      const images = this.state.images.map((image) => {
+        if (image.matched === false && image.flipped === true) {
+          image.flipped = false;
+        }
+        return image;
+      });
+      this.setState({images});
+    }
+    this.flipImage(id);
+
+    // if first click
     if (this.state.lastClicked === 0) {
-      this.setState({lastClicked: id});
-    } else if (this.state.lastClicked === id * 10 || id === this.state.lastClicked * 10) {
+      this.setState({lastClicked: id, count: 1});
+
+      // if correct match
+    } else if (this.state.lastClicked === match) {
+      const images = this.state.images.map((image) => {
+        if (image.id === id || image.id === match) {
+          image.matched = true;
+        }
+        return image;
+      });
+      this.setState({lastClicked: 0, images, count: 0});
+
+      // if second click is not a match
+    } else if (id !== this.state.lastClicked) {
+      this.setState({lastClicked: 0, count: 2});
     }
 
   };
 
+  flipImage = (id, id2) => {
+    const images = this.state.images.map((image) => {
+      if ((image.id === id || image.id === id2) && !image.matched) {
+        image.flipped = true;
+      }
+      return image;
+    })
+    this.setState({images});
+  };
+
+  flipImageBack = (id, id2) => {
+    const images = this.state.images.map((image) => {
+      if ((image.id === id || image.id === id2) && !image.matched) {
+        image.flipped = false;
+      }
+      return image;
+    })
+    this.setState({images});
+  }
   shuffleImages = () => {
     const images = this.state.images;
 
@@ -73,6 +118,9 @@ class App extends Component {
                 back={image.back}
                 key={image.id}
                 id={image.id}
+                match={image.match}
+                flipped={image.flipped}
+                matched={image.matched}
                 clickImage={this.clickImage}
               />
           ))}
