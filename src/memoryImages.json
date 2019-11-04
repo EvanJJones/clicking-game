@@ -1,0 +1,110 @@
+[
+  {
+    "src": "./images/JC.png",
+    "back": "./images/cardBack.png",
+    "alt": "Jack of Clubs",
+    "flipped": false,
+    "matched": false,
+    "id": 1,
+    "match": 10
+  },
+  {
+    "src": "./images/JD.png",
+    "back": "./images/cardBack.png",
+    "alt": "Jack of Diamonds",
+    "flipped": false,
+    "matched": false,
+    "id": 2,
+    "match": 20
+  },
+  {
+    "src": "./images/JH.png",
+    "back": "./images/cardBack.png",
+    "alt": "Jack of Hearts",
+    "flipped": false,
+    "matched": false,
+    "id": 3,
+    "match": 30
+  },
+  {
+    "src": "./images/JS.png",
+    "back": "./images/cardBack.png",
+    "alt": "Jack of Spades",
+    "flipped": false,
+    "matched": false,
+    "id": 4,
+    "match": 40
+  },
+  {
+    "src": "./images/KC.png",
+    "back": "./images/cardBack.png",
+    "alt": "King of Clubs",
+    "flipped": false,
+    "matched": false,
+    "id": 5,
+    "match": 50
+  },
+  {
+    "src": "./images/KD.png",
+    "back": "./images/cardBack.png",
+    "alt": "King of Diamonds",
+    "flipped": false,
+    "matched": false,
+    "id": 6,
+    "match": 60
+  },
+  {
+    "src": "./images/JC.png",
+    "back": "./images/cardBack.png",
+    "alt": "Jack of Clubs",
+    "flipped": false,
+    "matched": false,
+    "id": 10,
+    "match": 1
+  },
+  {
+    "src": "./images/JD.png",
+    "back": "./images/cardBack.png",
+    "alt": "Jack of Diamonds",
+    "flipped": false,
+    "matched": false,
+    "id": 20,
+    "match": 2
+  },
+  {
+    "src": "./images/JH.png",
+    "back": "./images/cardBack.png",
+    "alt": "Jack of Hearts",
+    "flipped": false,
+    "matched": false,
+    "id": 30,
+    "match": 3
+  },
+  {
+    "src": "./images/JS.png",
+    "back": "./images/cardBack.png",
+    "alt": "Jack of Spades",
+    "flipped": false,
+    "matched": false,
+    "id": 40,
+    "match": 4
+  },
+  {
+    "src": "./images/KC.png",
+    "back": "./images/cardBack.png",
+    "alt": "King of Clubs",
+    "flipped": false,
+    "matched": false,
+    "id": 50,
+    "match": 5
+  },
+  {
+    "src": "./images/KD.png",
+    "back": "./images/cardBack.png",
+    "alt": "King of Diamonds",
+    "flipped": false,
+    "matched": false,
+    "id": 60,
+    "match": 6
+  }
+]

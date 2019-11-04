@@ -1,9 +1,33 @@
-import React from "react";
+import React, {Component} from "react";
 
-function Image(props) {
-  return (
-    <img src={props.src} alt={props.alt} width={175} className="img-thumbnail" onClick={() => props.clickImage(props.id)}></img>
-  );
+class Image extends Component {
+  state = {
+    flipped: false,
+    matched: false,
+    lastClicked: 0
+  }
+
+  clickImage = (id, match) => {;
+    if (this.state.lastClicked === 0) {
+      this.setState({lastClicked: id});
+    } else if (this.state.lastClicked === match) {
+      this.setState({lastClicked: 0, matched: true});
+    } else {
+      this.setState({lastClicked: 0});
+    }
+
+  };
+
+  flipCard = () => {
+    console.log(this.props.id);
+    this.setState({flipped: true})
+  }
+  render() {
+    return (
+
+    <img src={this.props.flipped ? this.props.src : this.props.back} alt={this.props.alt} width="16.5%" className="img-thumbnail" onClick={() => this.props.clickImage(this.props.id, this.props.match)}></img>
+    )
+  }
 }
 
 export default Image;
