@@ -13,6 +13,7 @@ class App extends Component {
     hiScore: 0,
     rulesRead: false,
     count: 0,
+    matchedCount: 0,
     message: ""
   }
 
@@ -21,6 +22,8 @@ class App extends Component {
   }
 
   clickImage = (id, match) => {
+    this.setState({score: this.state.score + 1, message: ""});
+    // re flips cards on third click after two wrong
     if (this.state.count >= 2){
       const images = this.state.images.map((image) => {
         if (image.matched === false && image.flipped === true) {
@@ -30,6 +33,7 @@ class App extends Component {
       });
       this.setState({images});
     }
+    // flips card
     this.flipImage(id);
 
     // if first click
@@ -44,7 +48,24 @@ class App extends Component {
         }
         return image;
       });
-      this.setState({lastClicked: 0, images, count: 0});
+      this.setState({lastClicked: 0, images, count: 0, matchedCount: this.state.matchedCount + 1});
+      console.log(this.state.matchedCount);
+      if (this.state.matchedCount >= 5) {
+        if (this.state.score < this.state.hiScore || this.state.hiScore === 0) {
+          console.log(this.state.score);
+          this.setState({hiScore: this.state.score})
+        }
+        
+
+        const images = this.state.images;
+        console.log(images);
+        images.forEach((image) => {
+          image.matched = false;
+          image.flipped = false;
+        });
+        this.setState({message: "You Win!", score: 0, images, matchedCount: 0});
+        this.shuffleImages();
+      }
 
       // if second click is not a match
     } else if (id !== this.state.lastClicked) {
@@ -53,25 +74,23 @@ class App extends Component {
 
   };
 
+  // flips card
   flipImage = (id, id2) => {
     const images = this.state.images.map((image) => {
       if ((image.id === id || image.id === id2) && !image.matched) {
-        image.flipped = true;
+        if (image.flipped === false) {
+          image.flipped = true;
+        } else {
+          image.flipped = false;
+        }
+        
       }
       return image;
     })
     this.setState({images});
   };
 
-  flipImageBack = (id, id2) => {
-    const images = this.state.images.map((image) => {
-      if ((image.id === id || image.id === id2) && !image.matched) {
-        image.flipped = false;
-      }
-      return image;
-    })
-    this.setState({images});
-  }
+  // called at the begginning to arrange cards randomly
   shuffleImages = () => {
     const images = this.state.images;
 
