@@ -1,7 +1,7 @@
 [
   {
     "src": "./images/JC.png",
-    "back": "./images/cardBack.webp",
+    "back": "./images/cardBack.png",
     "alt": "Jack of Clubs",
     "flipped": false,
     "matched": false,
@@ -10,7 +10,7 @@
   },
   {
     "src": "./images/JD.png",
-    "back": "./images/cardBack.webp",
+    "back": "./images/cardBack.png",
     "alt": "Jack of Diamonds",
     "flipped": false,
     "matched": false,
@@ -19,7 +19,7 @@
   },
   {
     "src": "./images/JH.png",
-    "back": "./images/cardBack.webp",
+    "back": "./images/cardBack.png",
     "alt": "Jack of Hearts",
     "flipped": false,
     "matched": false,
@@ -28,7 +28,7 @@
   },
   {
     "src": "./images/JS.png",
-    "back": "./images/cardBack.webp",
+    "back": "./images/cardBack.png",
     "alt": "Jack of Spades",
     "flipped": false,
     "matched": false,
@@ -37,7 +37,7 @@
   },
   {
     "src": "./images/KC.png",
-    "back": "./images/cardBack.webp",
+    "back": "./images/cardBack.png",
     "alt": "King of Clubs",
     "flipped": false,
     "matched": false,
@@ -46,7 +46,7 @@
   },
   {
     "src": "./images/KD.png",
-    "back": "./images/cardBack.webp",
+    "back": "./images/cardBack.png",
     "alt": "King of Diamonds",
     "flipped": false,
     "matched": false,
@@ -55,7 +55,7 @@
   },
   {
     "src": "./images/JC.png",
-    "back": "./images/cardBack.webp",
+    "back": "./images/cardBack.png",
     "alt": "Jack of Clubs",
     "flipped": false,
     "matched": false,
@@ -64,7 +64,7 @@
   },
   {
     "src": "./images/JD.png",
-    "back": "./images/cardBack.webp",
+    "back": "./images/cardBack.png",
     "alt": "Jack of Diamonds",
     "flipped": false,
     "matched": false,
@@ -73,7 +73,7 @@
   },
   {
     "src": "./images/JH.png",
-    "back": "./images/cardBack.webp",
+    "back": "./images/cardBack.png",
     "alt": "Jack of Hearts",
     "flipped": false,
     "matched": false,
@@ -82,7 +82,7 @@
   },
   {
     "src": "./images/JS.png",
-    "back": "./images/cardBack.webp",
+    "back": "./images/cardBack.png",
     "alt": "Jack of Spades",
     "flipped": false,
     "matched": false,
@@ -91,7 +91,7 @@
   },
   {
     "src": "./images/KC.png",
-    "back": "./images/cardBack.webp",
+    "back": "./images/cardBack.png",
     "alt": "King of Clubs",
     "flipped": false,
     "matched": false,
@@ -100,7 +100,7 @@
   },
   {
     "src": "./images/KD.png",
-    "back": "./images/cardBack.webp",
+    "back": "./images/cardBack.png",
     "alt": "King of Diamonds",
     "flipped": false,
     "matched": false,
