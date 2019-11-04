@@ -16,9 +16,10 @@ function ScoreBar(props) {
     <div style={styles}>
       <h2>Rules</h2>
       <ul>
-        <li>Click as many cards as you can without clicking the same card twice</li>
-        <li>The game resets when you click the same car twice in one game</li>
-        <li>The board will shuffle each time you click a card</li>
+        <li>Click a card to reveal what it is</li>
+        <li>Click another card to try and create a match</li>
+        <li>if they match they will stay flipped, otherwise they will flip back when you click again</li>
+        
       </ul>
       <button onClick={props.markedRead}>Done Reading</button>
     </div>
