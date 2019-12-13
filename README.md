@@ -11,7 +11,7 @@ There are simple instructions in game, click done to dismiss that. Afterwards yo
 ## Images
 
 ![Screenshot](./Screenshot1.png)
-![Screenshot](./Screenshot2.png)
+![Screenshot](./Screenshot2.PNG)
 
 ## Author
 
