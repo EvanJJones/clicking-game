@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This was made mostly for me to learn more about react and state in particular. 
+This was made mostly for me to learn more about react and state in particular.
 
 ## Instructions
 
@@ -10,6 +10,8 @@ There are simple instructions in game, click done to dismiss that. Afterwards yo
 
 ## Images
 
+![Screenshot](./Screenshot1.png)
+![Screenshot](./Screenshot2.png)
 
 ## Author
 
