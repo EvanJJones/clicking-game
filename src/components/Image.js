@@ -9,6 +9,7 @@ class Image extends Component {
     lastClicked: 0
   };
 
+  // checks if it is a match or not
   clickImage = (id, match) => {
     if (this.state.lastClicked === 0) {
       this.setState({ lastClicked: id });
@@ -19,6 +20,7 @@ class Image extends Component {
     }
   };
 
+  // flips the card over
   flipCard = () => {
     console.log(this.props.id);
     this.setState({ flipped: true });
