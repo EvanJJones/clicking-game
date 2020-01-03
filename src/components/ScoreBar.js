@@ -1,5 +1,7 @@
 import React from "react";
 
+// holds the user score and high score
+
 const mainStyle = {
   width: "100%",
   height: "75px",
@@ -7,12 +9,12 @@ const mainStyle = {
   justifyContent: "space-evenly",
   alignItems: "center",
   backgroundColor: "#00b3b3"
-}
+};
 
 const elementStyle = {
   width: "30%",
   textAlign: "center"
-}
+};
 function ScoreBar(props) {
   return (
     <div style={mainStyle}>
